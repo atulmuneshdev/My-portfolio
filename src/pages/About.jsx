@@ -65,9 +65,9 @@ function About() {
                   <div className='absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]'></div>
                   <div className='mb-1 flex flex-col sm:flex-row sm:justify-between sm:items-center'>
                     <h4 className='text-lg font-semibold text-white'>Bachelor of Technology in CSE</h4>
-                    <span className='text-sm font-medium text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full'>2021 - 2025</span>
+                    <span className='text-sm font-medium text-blue-400 bg-blue-400/10 px-3 py-1 rounded-full'>2022 - 2026</span>
                   </div>
-                  <p className='text-blue-200/70 font-medium mb-2'>Galgotias University</p>
+                  <p className='text-blue-200/70 font-medium mb-2'>Dr kn modi institute of engineering and technology</p>
                   <p className='text-gray-400 text-sm leading-relaxed'>
                     Focused on software engineering, data structures, algorithms, and full-stack web development.
                     Maintained a strong academic record while participating in various tech workshops.
