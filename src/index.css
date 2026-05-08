@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #030014;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.box-animate {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: boxOpen 0.8 ease-in-out forwards;
+  animation-duration: 5s;
+}
+
+@keyframes boxOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.typing-text {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  /* cursor */
+  animation: typing 3s steps(30) forwards, blink 0.7;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+/* Cursor Blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*  nav box */
+
+.navbox {
+
+  height: 50%;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.navbox:hover {}
+
+/* glowing animated border */
+.navbox:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, rgb(189, 79, 79), rgb(228, 228, 222), rgb(143, 213, 213), rgb(201, 101, 201));
+  background-size: 100% 100%;
+
+  /* mask to show only border */
+  -webkit-mask:
+    linear-gradient(#8f3e3e 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  padding: 3px;
+
+  animation:
+    borderFlow 4s linear infinite,
+    drawBox 2.5s ease forwards;
+}
+
+/* DRAWING EFFECT */
+@keyframes drawBox {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+
+  10% {
+    clip-path: inset(90% 0 0 0);
+    /* top */
+  }
+
+  30% {
+    clip-path: inset(0 90% 0 0);
+    /* right */
+  }
+
+  60% {
+    clip-path: inset(0 0 90% 0);
+    /* bottom */
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    /* full */
+  }
+}
+
+/* GRADIENT ANIMATION */
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+
+/*  box border  animaction */
+
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* glowing animated border */
+.box:hover:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, red, orange, yellow, cyan, blue, violet);
+  background-size: 300% 300%;
+
+  /* mask to show only border */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  padding: 3px;
+
+  animation:
+    borderFlow 4s linear infinite,
+    drawBox 2.5s ease forwards;
+}
+
+/* DRAWING EFFECT */
+@keyframes drawBox {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+
+  10% {
+    clip-path: inset(90% 0 0 0);
+    /* top */
+  }
+
+  30% {
+    clip-path: inset(0 90% 0 0);
+    /* right */
+  }
+
+  60% {
+    clip-path: inset(0 0 90% 0);
+    /* bottom */
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    /* full */
+  }
+}
+
+/* GRADIENT ANIMATION */
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
