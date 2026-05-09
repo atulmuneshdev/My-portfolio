@@ -28,7 +28,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: <FiGithub />, href: "https://github.com/atulmuneshdev", label: "GitHub" },
-    { icon: <FiLinkedin />, href: "www.linkedin.com/in/kumar-atul-munesh-a7a9983aa", label: "LinkedIn" },
+    { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/kumar-atul-munesh-a7a9983aa", label: "LinkedIn" },
     { icon: <FiTwitter />, href: "https://twitter.com", label: "Twitter" },
     { icon: <FiMail />, href: "atulmuneshdev@gmail.com", label: "Email" },
   ];
