@@ -144,7 +144,7 @@ const projectsData = [
         category: "Frontend",
         thumbnail: "/Adity.png",
         description: "A premium, modern e-Portfolio designed and developed for a friend showcasing professional work, skills, and achievements.",
-        fullDescription: "This custom-built e-Portfolio was created to elevate a friend's professional online presence. The design focuses on clean aesthetics, smooth animations, and intuitive navigation to showcase their work in the best possible light.",
+        fullDescription: "This custom-built Electrical Engineering e-Portfolio was created to showcase my technical skills, engineering projects, and innovative ideas with a modern and futuristic digital experience. The design focuses on clean aesthetics, smooth animations, and intuitive navigation to professionally present my work, achievements, and technical expertise in the best possible way",
         techStack: [
             { name: "React", icon: <SiReact className="text-[#61DAFB]" /> },
             { name: "Tailwind", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
