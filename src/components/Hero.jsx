@@ -181,8 +181,8 @@ const Hero = () => {
 
             <div className="flex items-center gap-6 pt-4">
               {[
-                { icon: <FiGithub />, href: "https://github.com" },
-                { icon: <FiLinkedin />, href: "https://linkedin.com" },
+                { icon: <FiGithub />, href: "https://github.com/atulmuneshdev" },
+                { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/kumar-atul-munesh-a7a9983aa" },
                 { icon: <FiTwitter />, href: "https://twitter.com" },
               ].map((social, i) => (
                 <motion.a
