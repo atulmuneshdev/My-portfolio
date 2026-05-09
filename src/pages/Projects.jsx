@@ -138,6 +138,39 @@ const projectsData = [
         github: "https://github.com/atulmuneshdev/Fin-Track",
         live: "https://fin-track-three-plum.vercel.app/"
     },
+    {
+        id: 4,
+        title: "Friend's e-Portfolio - Personal Website",
+        category: "Frontend",
+        thumbnail: "/Adity.png",
+        description: "A premium, modern e-Portfolio designed and developed for a friend showcasing professional work, skills, and achievements.",
+        fullDescription: "This custom-built e-Portfolio was created to elevate a friend's professional online presence. The design focuses on clean aesthetics, smooth animations, and intuitive navigation to showcase their work in the best possible light.",
+        techStack: [
+            { name: "React", icon: <SiReact className="text-[#61DAFB]" /> },
+            { name: "Tailwind", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+            { name: "Framer", icon: <SiFramer className="text-white" /> },
+            { name: "Vercel", icon: <SiVercel className="text-white" /> }
+        ],
+        details: {
+            frontend: ["React 19", "Tailwind CSS v4", "Framer Motion", "Lucide Icons"],
+            backend: [],
+            database: [],
+            deployment: ["Vercel", "Responsive Design"]
+        },
+        features: [
+            "Hero Section with Dynamic Typing Effect",
+            "About Me & Professional Bio",
+            "Skills Showcase with Progress Bars",
+            "Project Gallery with Filtering",
+            "Contact Form & Social Links",
+            "Fully Responsive for All Devices"
+        ],
+        architecture: "Clean, component-based React architecture with smooth animations powered by Framer Motion. Optimized for performance and accessibility.",
+        stats: { completion: 100, contribution: 100, complexity: "Medium" },
+        github: "https://github.com/atulmuneshdev/Aditya",
+        live: "https://aditya-hazel.vercel.app/"
+    },
+
 ];
 
 const ProjectCard = ({ project, onClick }) => {
