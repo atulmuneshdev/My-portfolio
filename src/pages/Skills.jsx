@@ -18,7 +18,7 @@ import {
     SiTypescript,
     SiNextdotjs
 } from 'react-icons/si';
-import { FaLaptopCode, FaDatabase, FaServer, FaTools, FaCloudUploadAlt, FaBrain, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaLaptopCode, FaDatabase, FaServer, FaTools, FaCloudUploadAlt, FaBrain, FaHtml5, FaCss3Alt, FaJava } from 'react-icons/fa';
 import { MdOutlineScreenshotMonitor } from 'react-icons/md';
 
 const skillData = [
@@ -46,6 +46,7 @@ const skillData = [
             { name: "REST API", icon: <FaServer className="text-orange-400" />, level: "Expert", desc: "Designing robust and secure API endpoints." },
             { name: "Socket.io", icon: <SiSocketdotio className="text-white" />, level: "Intermediate", desc: "Real-time bi-directional communication." },
             { name: "JWT Auth", icon: <SiJsonwebtokens className="text-[#d63aff]" />, level: "Advanced", desc: "Secure token-based user authentication." },
+            { name: "Java", icon: <FaJava className="text-[#ED8B00]" />, level: "Intermediate", desc: "Learning OOP, DSA, and backend development with Java." },
         ]
     },
     {
@@ -81,6 +82,9 @@ const learningData = [
     { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
     { name: "System Design", icon: <FaBrain className="text-yellow-400" /> },
+    { name: "Spring Boot", icon: <FaJava className="text-[#6DB33F]" /> },
+    { name: "Hibernate", icon: <FaDatabase className="text-[#A8201A]" /> },
+    { name: "Maven", icon: <FaTools className="text-[#C71A36]" /> },
 ];
 
 const SkillCard = ({ skill }) => {

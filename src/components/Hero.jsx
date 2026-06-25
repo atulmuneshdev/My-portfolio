@@ -16,12 +16,14 @@ import {
 } from "react-icons/fi";
 
 import { Link } from "react-router-dom";
+import { FaJava, FaServer, FaTools, FaJava as FaHibernate } from "react-icons/fa";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const roles = [
-    "Full Stack Developer",
+    "Full Stack Developer ",
     "MERN Stack Engineer",
+    "Java Developer Intern (Learning OOP, DSA, JDBC)",
     "Frontend & Backend Developer",
     "Building Modern Web Experiences"
   ];
@@ -79,6 +81,9 @@ const Hero = () => {
     { icon: <FiDatabase />, name: "MongoDB", color: "text-green-400" },
     { icon: <FiCpu />, name: "Node.js", color: "text-emerald-400" },
     { icon: <FiLayout />, name: "Tailwind", color: "text-sky-400" },
+    { icon: <FaJava />, name: "Java", color: "text-red-500" },
+    { icon: <FaHibernate />, name: "Hibernate", color: "text-yellow-600" },
+  
   ];
 
   return (
@@ -237,14 +242,18 @@ const Hero = () => {
                   transition={{
                     duration: 5 + i,
                     repeat: Infinity,
-                    delay: i * 0.7,
+                    delay: i * 0.5,
                     ease: "easeInOut"
                   }}
                   style={{ willChange: "transform" }}
                   className={`absolute p-4 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex items-center gap-3 shadow-2xl z-20 ${i === 0 ? "-top-8 -left-12" :
-                    i === 1 ? "-bottom-6 -left-8" :
-                      i === 2 ? "top-12 -right-16" :
-                        "-bottom-10 -right-6"
+                      i === 1 ? "-bottom-6 -left-8" :
+                        i === 2 ? "top-12 -right-16" :
+                          i === 3 ? "-bottom-10 -right-6" :
+                            i === 4 ? "top-20 -left-10" :
+                              i === 5 ? "bottom-20 -right-10" :
+                                i === 6 ? "top-40 -left-8" :
+                                  "bottom-40 -right-8"
                     }`}
                 >
                   <span className={`text-2xl ${tech.color}`}>{tech.icon}</span>
